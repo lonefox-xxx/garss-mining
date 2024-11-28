@@ -64,7 +64,7 @@ function DirectconnectAndPing() {
                 `WebSocket closed with code: ${code}, reason: ${reason}`
             );
             setTimeout(
-                () => connectAndPing(USERID),
+                () => DirectconnectAndPing(),
                 retryInterval
             );
         });
