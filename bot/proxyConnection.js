@@ -90,7 +90,7 @@ function connect(proxyUrl) {
                 `WebSocket closed with code: ${code}, reason: ${reason}`
             );
             setTimeout(
-                () => connectAndPing(USERID),
+                () => connect(proxyUrl),
                 retryInterval
             );
         });
